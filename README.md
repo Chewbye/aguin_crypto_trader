@@ -16,7 +16,7 @@ Tested exchanges:
 
 ## How to use
 ### Downloading historical data for backtesting
-`python main.py download-data`
+`python main.py download-data --days 10`
 
 *Default configuration file that will be used have to be located in "user_data\configs\config.json"*
 
