@@ -1,11 +1,11 @@
 import sys
 from typing import Any
 from commands.arguments import Arguments
+import logging
 
 if __name__ == '__main__':
     return_code: Any = 1
     try:
-        
         arguments_formatted= sys.argv
         del arguments_formatted[0]
         arguments = Arguments(arguments_formatted)
@@ -18,14 +18,9 @@ if __name__ == '__main__':
         else:
             # No subcommand was issued.
             raise Exception(
-                "Usage of Freqtrade requires a subcommand to be specified.\n"
-                "To have the bot executing trades in live/dry-run modes, "
-                "depending on the value of the `dry_run` setting in the config, run Freqtrade "
-                "as `freqtrade trade [options...]`.\n"
-                "To see the full list of options available, please use "
-                "`freqtrade --help` or `freqtrade <command> --help`."
+                "A subcommand have to be specified.\n"
             )
     except Exception as err:
-        print('Fatal exception: {0}'.format(err))
+        logging.exception('Fatal exception: {0}'.format(err))
     finally:
         sys.exit(return_code)
