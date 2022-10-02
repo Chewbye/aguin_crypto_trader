@@ -41,9 +41,15 @@ AVAILABLE_CLI_OPTIONS = {
         action='version',
         version=f'%(prog)s {"1.0"}',
     )
+    ,
+    "conf": Arg(
+        '-c', '--conf',
+        help='Specify config path',
+        default="user_data/configs/config.json"
+    )
 }
 
-ARGS_COMMON = ["version"]
+ARGS_COMMON = ["version", "conf"]
 
 
 ARGS_DOWNLOAD_DATA = ["pairs_file", "days", "timerange", "timeframes"]
