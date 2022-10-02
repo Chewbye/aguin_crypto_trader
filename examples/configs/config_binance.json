@@ -1,0 +1,26 @@
+{
+    "stake_currency": "USDT",
+    "exchange": {
+        "name": "binance",
+        "key": "your_exchange_key",
+        "secret": "your_exchange_secret",
+        "pairs": [
+            "ALGO/BTC",
+            "ATOM/BTC",
+            "BAT/BTC",
+            "BCH/BTC",
+            "BRD/BTC",
+            "EOS/BTC",
+            "ETH/BTC",
+            "IOTA/BTC",
+            "LINK/BTC",
+            "LTC/BTC",
+            "NEO/BTC",
+            "NXS/BTC",
+            "XMR/BTC",
+            "XRP/BTC",
+            "XTZ/BTC"
+        ]
+    },
+    "bot_name": "Aguin"
+}
