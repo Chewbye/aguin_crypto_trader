@@ -18,7 +18,7 @@ Tested exchanges:
 ### Downloading historical data for backtesting
 `python main.py download-data --days 10`
 
-*Default configuration file that will be used have to be located in "user_data\configs\config.json"*
+*Default configuration file that will be used have to be located in "user_data\configs\config.json" or can be changed to another location with parameter "--conf /myconffolder/config.json"*
 
 # Disclaimer
 We are not responsible for any money you would use using this software.
